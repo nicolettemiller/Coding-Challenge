@@ -14,27 +14,26 @@
  *= require_self
  */
 
-footer { margin-top: 100px; }
+footer { margin-bottom: 100px; }
 table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #ec6800; }
 body { margin: 0; }
 
-/*
 .navbar {
   min-height: 28px;
   background-color: #f55e55;
 }
 
-.navbar a.brand { font-size: 12px; }
-.navbar a.brand:hover {
- color: #ec6800;
- background-color: #ec6800;
- text-decoration: none;
-}
-*/
-
 footer {
-  background-color: #ec6800;
-  padding: 30px 0;
+  background-color: #00a381;
+  padding: 15px 0;
+  font-family: Snell Roundhand, cursive;
+  font-size: 30px; 
+  font-weight: bold;
+  color: #ffffff;
+}
+
+body {
+  
 }
 
