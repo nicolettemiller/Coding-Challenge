@@ -15,9 +15,9 @@
  */
 
 /*footer { margin-top: 100px; } */
-table, td, th { vertical-align: middle; border: none; }
+/*table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
-body { margin: 0; }
+body { margin: 0; }*/
 
 /* Navbar */ 
 .navbar {
@@ -30,17 +30,6 @@ body { margin: 0; }
  background-color: transparent;
  text-decoration: none;
 }
-
-/* Footer 
-footer {
-  background-color: #00a381;
-  padding: 10px 0;
-  font-family: Snell Roundhand, cursive;
-  font-size: 30px;
-  font-weight: bold;
-  color: #ffffff;
-}
-*/
 
 /* Body */ 
 body {
