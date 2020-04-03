@@ -1,26 +1,28 @@
-<!DOCTYPE html>  <!-- Using HTML5 -->
+<!doctype html>  <!-- Using HTML5 -->
+<html lang="en">
 
-<html>
 <!-- HEADER -->
   <head>
-    <title>Codingchallenge</title>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+   <title>ThinkingSpace</title>
   </head>
 
 <!-- FOOTER -->
   <footer>
     <div class="container">
-      Rails Girls <%= Time.now.year %>
+      My Thinking Space
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 <!-- BODY -->
   <body>
@@ -33,25 +35,29 @@
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
-
   <%= yield %>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- Navbar -->
+    <nav class="navbar fixed-bottom navbar-dark" style="background-color: #00a381;">
       <div class="container">
-        <a class="navbar-brand" href="/">The Idea App</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <!-- main navbar attributes -->
+        <a class="navbar-brand" href="/">My Thinking Space</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- secondary navbar attributes -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- navigation bar buttons -->
           <ul class="navbar-nav mr-auto">
+            <!-- navbar /ideas -->
             <li class="nav-item active">
               <a class="nav-link" href="/ideas">Ideas</a>
             </li>
+            <!-- navbar /ideas/new -->
             <li class="nav-item">
               <%= link_to 'New Idea', new_idea_path, class: "nav-link" %>
             </li>
+            <!-- navbar /pages/info -->
             <li class="nav-item">
               <a class="nav-link" href="/pages/info">Info</a>
             </li>
@@ -70,5 +76,10 @@
         </div>
       </div>
     </nav>
+
+  <!-- JavaScript plugins: jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   </body>
 </html>
