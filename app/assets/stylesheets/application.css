@@ -14,23 +14,44 @@
  *= require_self
  */
 
-footer { margin-top: 100px; }
+/*footer { margin-top: 100px; } */
 table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
 body { margin: 0; }
 
+/* Navbar */ 
 .navbar {
-  min-height: 38px;
-  background-color: #f55e55;
+  min-height: 75px;
+  background-color: #00a381;
 }
-.navbar a.brand { font-size: 18px; }
+.navbar a.brand { font-size: 18px;}
 .navbar a.brand:hover {
  color: #fff;
  background-color: transparent;
  text-decoration: none;
 }
 
+/* Footer 
 footer {
-  background-color: #ebebeb;
-  padding: 30px 0;
+  background-color: #00a381;
+  padding: 10px 0;
+  font-family: Snell Roundhand, cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
 }
+*/
+
+/* Body */ 
+body {
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url(geometric-leaves.png);
+	padding-top: 115px;
+}
+
+
+
+
+
+
+

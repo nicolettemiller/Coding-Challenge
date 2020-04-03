@@ -1,10 +1,12 @@
-<h1>Listing ideas</h1>
+<!-- idea list table layout -->
+
+<h1 style="font-size: 50px; color: #4a488e; text-align: center">Thoughts and Ideas (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h1>
 
 <% @ideas.in_groups_of(3) do |group| %>
   <div class="row">
     <% group.compact.each do |idea| %>
       <div class="col-md-4">       
-        <%= image_tag idea.picture_url(:thumb) if idea.picture.present? %>
+        <%= image_tag(idea.picture_url, :width => 150) if idea.picture.present? %>
         <h4><%= link_to idea.name, idea %></h4>
         <%= idea.description %>
       </div>
