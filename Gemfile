@@ -11,8 +11,6 @@ gem 'sqlite3', '~> 1.4'
 gem 'carrierwave'
 # Use imagemagick to convert image types 
 gem 'mini_magick'
-# Use Devise to set up user accounts 
-gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
