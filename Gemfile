@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use bcrypt to hash the passwords for users 
-gem 'bcrypt'
+# gem 'bcrypt'
 # Use carrierwave to upload files in Rails 
 gem 'carrierwave'
 # Use imagemagick to convert image types 

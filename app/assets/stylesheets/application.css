@@ -14,11 +14,6 @@
  *= require_self
  */
 
-/*footer { margin-top: 100px; } */
-/*table, td, th { vertical-align: middle; border: none; }
-th { border-bottom: 1px solid #DDD; }
-body { margin: 0; }*/
-
 /* Navbar */ 
 .navbar {
   min-height: 75px;
@@ -37,6 +32,7 @@ body {
 	background-image: url(geometric-leaves.png);
 	padding-top: 115px;
 }
+
 
 
 

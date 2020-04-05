@@ -1,5 +1,21 @@
-<h1>New User</h1>
+<% provide(:title, 'Sign up') %>
+<h1 style="font-size: 50px; color: #057DCD; text-align: left">Sign up</h1>
 
-<%= render 'form', user: @user %>
+<!-- form to create new user -->
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user, url: signup_path) do |f| %>
+    <%= render 'shared/error_messages' %>
+    
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
 
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+<!-- link to go back -->
 <%= link_to 'Back', users_path %>
