@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  root to: redirect('/users')
+  get 'static_pages/home'
   resources :users
   get 'pages/info'
-  # root to: redirect('/ideas')
-  root to: redirect('/users')
   resources :ideas
 end
