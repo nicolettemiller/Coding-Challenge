@@ -7,5 +7,6 @@ class CreateIdeas < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+    add_index :ideas, [:user_id, :created_at]
   end
 end

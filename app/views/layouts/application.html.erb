@@ -23,8 +23,6 @@
       <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
     <% end %>
   <%= yield %>
-  <!-- built-in debug -->
-  <%= debug(params) if Rails.env.development? %>
 
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #1E3D58;">

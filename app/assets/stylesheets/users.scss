@@ -13,4 +13,12 @@ input {
   height: auto !important;
 }
 
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+  }
+}
 
