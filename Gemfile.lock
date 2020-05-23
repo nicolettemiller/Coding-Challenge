@@ -58,7 +58,6 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -115,7 +114,7 @@ GEM
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     public_suffix (4.0.3)
-    puma (4.3.3)
+    puma (4.3.5)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-proxy (0.6.5)
@@ -214,7 +213,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
@@ -222,7 +220,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   mini_magick
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.2, >= 6.0.2.2)
   sass-rails (>= 6)
   selenium-webdriver
